@@ -1,0 +1,71 @@
+{
+  "askCortexPage": {
+    "topic": "general",
+    "suggestions": [
+      "Which critical assets will fail or leak next, and how much production is at risk?",
+      "Which equipment classes and failure modes cost us the most production?",
+      "How many failures did the historian see coming, and how early?",
+      "Where is maintenance backlog and overdue PM concentrated?",
+      "Which pipelines and vessels are closest to minimum wall thickness?",
+      "What would we lose by reading SAP from BDC instead of ECC or S/4HANA?"
+    ]
+  },
+  "pages": {
+    "overview": {
+      "topic": "overview",
+      "suggestions": [
+        "Where is production most at risk right now, and why?",
+        "How has deferred production trended, and what drives it?"
+      ]
+    },
+    "asset-risk": {
+      "topic": "risk",
+      "suggestions": [
+        "Which assets should we intervene on this week?",
+        "Which high-risk assets carry the most production?"
+      ]
+    },
+    "work-orders": {
+      "topic": "workorders",
+      "suggestions": [
+        "Where is PM compliance weakest?",
+        "Which overdue work is on critical equipment?"
+      ]
+    },
+    "failure-modes": {
+      "topic": "failures",
+      "suggestions": [
+        "Which failure modes drive the most downtime?",
+        "Which bad actors keep failing, and why?"
+      ]
+    },
+    "sensor-trends": {
+      "topic": "sensors",
+      "suggestions": [
+        "Which tags are degrading fastest?",
+        "Which assets are close to alarm limits?"
+      ]
+    },
+    "inspections": {
+      "topic": "inspections",
+      "suggestions": [
+        "Which inspections are overdue on high-risk assets?",
+        "Where is corrosion fastest?"
+      ]
+    },
+    "methane": {
+      "topic": "methane",
+      "suggestions": [
+        "Which components emit the most methane?",
+        "Which open leaks are past their repair deadline?"
+      ]
+    },
+    "data-sources": {
+      "topic": "sources",
+      "suggestions": [
+        "What does each selected source contribute?",
+        "What do we lose by reading SAP from BDC or BW instead of S/4HANA?"
+      ]
+    }
+  }
+}
