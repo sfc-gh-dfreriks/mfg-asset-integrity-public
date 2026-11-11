@@ -8,7 +8,7 @@ import ReactECharts from '@/components/Chart';
 import PageState from '@/components/PageState';
 
 // The canonical objects in canonical.yml, in flow order (quote to cash); each is a silver model in dbt/models/intermediate.
-const OBJECTS = ['customer', 'quote', 'sales_order_line', 'delivery_line', 'shipment_event', 'shipment_tracking', 'shipment_position', 'billing_line', 'ar_item', 'dispute_case', 'payment_receipt'];
+const OBJECTS = ['functional_location', 'equipment', 'notification', 'maintenance_order', 'maintenance_plan', 'measurement', 'well', 'well_downtime', 'sensor_tag', 'sensor_daily', 'sensor_reading', 'alarm', 'inspection_plan', 'inspection_result', 'ldar_survey', 'leak'];
 const LAYERS = ['source', 'staging', 'silver', 'gold'] as const;
 const LAYER_LABEL: Record<string, string> = { source: 'Bronze: native ERP tables', staging: 'dbt staging adapters', silver: 'Silver: canonical model', gold: 'Gold: marts' };
 const LAYER_COLOR: Record<string, string> = { source: '#94a3b8', staging: '#29b5e8', silver: '#8b5cf6', gold: '#f59e0b' };
@@ -37,7 +37,7 @@ function subgraph(nodes: any[], edges: any[], object: string) {
 export default function Lineage() {
   const { dataVersion } = useFilters();
   const { data, loading, error } = useQuery(fetchLineage, [dataVersion]);
-  const [object, setObject] = useState('sales_order_line');
+  const [object, setObject] = useState('functional_location');
   const g = useMemo(() => (data ? subgraph(data.nodes, data.edges, object) : { nodes: [], edges: [] }), [data, object]);
 
   const option = useMemo(() => {
