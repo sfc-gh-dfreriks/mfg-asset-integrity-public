@@ -1,6 +1,6 @@
 # Asset Integrity & Reliability — public demo
 
-A static, no-login build of the **Asset Integrity & Reliability** app (Oil, Gas & Energy use case 12 in
+A static, no-login build of the **Asset Integrity & Reliability** app (Oil, Gas & Energy use case 31 in
 [`mfg-use-cases`](https://github.com/sfc-gh-dfreriks/mfg-use-cases)), deployed to GitHub Pages:
 
 **https://sfc-gh-dfreriks.github.io/mfg-asset-integrity-public/**
@@ -37,8 +37,8 @@ Inspections · Methane & LDAR · Data Sources · Field Mapping · SAP Metadata �
 For live queries, source switching and free-text Ask Cortex, deploy from the source repo:
 ```bash
 git clone https://github.com/sfc-gh-dfreriks/mfg-use-cases
-cd mfg-use-cases/use_cases/12_asset_integrity
+cd mfg-use-cases/use_cases/31_asset_integrity
 tools/build_local.sh          # data -> bronze -> config -> adapters -> dbt -> semantic view -> agent
 cd app && npm install && npm run dev   # http://localhost:5197
 ```
-See [use_cases/12_asset_integrity/README.md](https://github.com/sfc-gh-dfreriks/mfg-use-cases/blob/main/use_cases/12_asset_integrity/README.md) for full setup instructions.
+See [use_cases/31_asset_integrity/README.md](https://github.com/sfc-gh-dfreriks/mfg-use-cases/blob/main/use_cases/31_asset_integrity/README.md) for full setup instructions.
